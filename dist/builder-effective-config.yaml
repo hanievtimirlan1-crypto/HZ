@@ -1,0 +1,19 @@
+directories:
+  output: dist
+  buildResources: build
+appId: com.tehnocomp.app
+productName: Tehno Comp
+extraResources:
+  - from: scripts/activation
+    to: activation
+win:
+  target: nsis
+  icon: build/icon.ico
+  signAndEditExecutable: false
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+  installerIcon: build/icon.ico
+  uninstallerIcon: build/icon.ico
+files: []
+electronVersion: 28.3.3
